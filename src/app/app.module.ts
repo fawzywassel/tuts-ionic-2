@@ -9,7 +9,7 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
-
+import {MattDamonPipe} from '../pipes/matt-damon'
 import { ElasticHeader } from '../components/elastic-header/elastic-header';
 
 @NgModule({
@@ -19,7 +19,8 @@ import { ElasticHeader } from '../components/elastic-header/elastic-header';
     ContactPage,
     HomePage,
     TabsPage,
-    ElasticHeader
+    ElasticHeader,
+    MattDamonPipe
   ],
   imports: [
     IonicModule.forRoot(MyApp)
