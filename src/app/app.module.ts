@@ -12,6 +12,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import {MattDamonPipe} from '../pipes/matt-damon'
 import { ElasticHeader } from '../components/elastic-header/elastic-header';
 
+
+import { FlashCardComponent } from '../components/flash-card/flash-card';
+import { Data } from '../providers/data';
 @NgModule({
   declarations: [
     MyApp,
@@ -20,7 +23,8 @@ import { ElasticHeader } from '../components/elastic-header/elastic-header';
     HomePage,
     TabsPage,
     ElasticHeader,
-    MattDamonPipe
+    MattDamonPipe,
+     FlashCardComponent
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -36,6 +40,7 @@ import { ElasticHeader } from '../components/elastic-header/elastic-header';
   providers: [
     StatusBar,
     SplashScreen,
+    Data,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
